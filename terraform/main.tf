@@ -2,10 +2,13 @@ provider "aws" {
   region = var.region
 }
 
+
+
+
+
 resource "aws_s3_bucket" "frontend_bucket" {
     bucket = "birthday-s3-bucket-001"
     force_destroy = true
-    acl = "public-read"
 }
 
 resource "aws_s3_bucket_public_access_block" "example" {
