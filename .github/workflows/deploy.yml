@@ -24,4 +24,4 @@ jobs:
         
     
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./frontend/ s3://birthday-s3-bucket-001 --delete
+      run: aws s3 sync ./frontend/ s3://birthday-s3-bucket-0010101 --delete
